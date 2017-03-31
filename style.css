@@ -1,0 +1,260 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #FFFFFF !important;
+    background: #FFFFFF !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #515151 !important;
+    color: #FFFFFF !important;
+    border-radius: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+.hamburger-menu {
+    max-width: 25%;
+}
+
+.navbar-brand-image {
+    height: 50px;
+}
+
+.navbar-right-items {
+    color: #FFFFFF;
+}
+
+.navbar-right-items:hover {
+    background-color: #FFFFFF !important;
+    color: #515151;
+}
+
+.navbar-right-theme-button:hover {
+    cursor: pointer;
+}
+
+.navbar-right-theme-button:active {
+    background: none;
+}
+
+#navbar-current-page {
+    background-color: #FFFFFF;
+    color: #515151;
+}
+
+/* Banner for home page (index) */
+.banner {
+    background-color: #515151 !important;
+    margin-top: 1%;
+    margin-bottom: 0 !important;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.banner-text {
+    font-size: 2.5vh;
+}
+
+.banner-image {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 50%;
+    margin-top: 20%;
+    padding: 0;
+}
+
+/* Packages on home page (index) */
+.packages-row {
+    margin-top: 1% !important;
+}
+
+.packages {
+    padding: 2%;
+    background: #0099FF;
+    border-radius: 6px;
+}
+
+.package-image {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.package-text {
+    font-size: 2vh;
+}
+
+.package-button {
+    background: #FFFFFF !important;
+    color: #515151 !important;
+    border-color: #F0F0F0 !important;
+}
+
+.package-button:hover {
+    background: #EEEEEE !important;
+    color: #000000 !important;
+    border-color: #F0F0F0 !important;
+}
+
+/* Footer */
+.footer {
+    margin-top: 1% !important;
+    color: #FFFFFF;
+}
+
+.footer-row {
+    background-color: #515151 !important;
+    margin-bottom: 0 !important;
+    padding: 1%;
+}
+
+.footer-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links-list li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links-list li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links-list li a:hover {
+    color: #BBBBBB;
+}
+
+/* Top Level Domains (domains) */
+.domain-button {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    margin-top: 1%;
+    border-color: #F0F0F0 !important;
+}
+
+.domain-button:hover {
+    background-color: #F0F0F0 !important;
+    border-color: #F0F0F0 !important;
+}
+
+.modal-dialog {
+    color: #000000 !important;
+}
+
+.domain-modal-button {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-color: #F0F0F0 !important;
+}
+
+.domain-modal-button:hover {
+    background-color: #F0F0F0 !important;
+}
+
+.domain-banner {
+    background: #0099FF !important;
+    margin-top: 1%;
+    margin-bottom: 0 !important;
+    padding: 1%;
+    border-radius: 6px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.domain-options {
+    background: #0099FF !important;
+    margin-top: 1%;
+    margin-bottom: 0 !important;
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.domains-row {
+    margin-top: 1% !important;
+    background: #0099FF;
+    border-radius: 10px;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+}
+
+.domain-title {
+  font-size: 2.3vw;
+}
+
+.domains-unknown {
+    color: #FFFFFF;
+}
+
+.domains-unknown:hover {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.domains {
+    padding: 2%;
+    background: #FFFFFF;
+    border-radius: 6px;
+    color: #0099FF;
+}
+
+.domains-options-row {
+    margin-bottom: 1%;
+}
+
+.domain-button-col {
+    margin-bottom: 1%;
+    border-color: #F0F0F0 !important;
+}
+
+/* Domain info */
+.domain-info-col {
+    margin-top: 1% !important;
+    padding: 1%;
+    background: #0099FF !important;
+    border-radius: 10px;
+}
+
+/* About page */
+.about-row-1 {
+    border-radius: 10px;
+    background: #0099FF;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.about-row-1-image {
+    margin-top: 3%;
+}
+
+.about-row-1-text {
+    font-size: 1.2vw;
+}
+
+.about-header {
+    text-shadow: 1px 1px #000000;
+}
+
+/* Site map image */
+.site-map-image {
+    margin-top: 1%;
+}

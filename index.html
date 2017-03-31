@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Most text sourced from https://www.fasthosts.co.uk -->
+<head>
+    <!-- Setting character set -->
+    <meta charset="utf-8">
+    <!-- Setting page layout according to device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FastHosts - Home</title>
+    <!-- Linking CSS -->
+    <link id="dark-style" href="styleDark.css" rel="stylesheet" type="text/css">
+    <link id="light-style" href="style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Linking JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body onload="InitialiseTheme()">
+    <!-- Navbar -->
+    <nav id="navbar-container" class="navbar">
+        <div class="container">
+            <!-- Left navbar items -->
+            <div class="navbar-left">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Navbar image -->
+                    <a href="index.html">
+                        <img class="navbar-brand-image" src="assets/navbar-logo.gif">
+                    </a>
+                    <!-- Dropdown button for when width of webpage gets too low to display all the navbar items -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-right-container">
+                        <!-- Dropdown button icon -->
+                        <img class="hamburger-menu" src="assets/hamburger.png">
+                    </button>
+                </ul>
+            </div>
+            <!-- Navbar items that can collapse when width of webpage gets too low to display all the navbar items -->
+            <div class="collapse navbar-collapse" id="navbar-right-container">
+                <!-- Right navbar items -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="navbar-current-page" class="navbar-right-items text-center" href="index.html">Home</a></li>
+                    <li><a class="navbar-right-items text-center" href="domains.html">Top Level Domains</a></li>
+                    <li><a class="navbar-right-items text-center" href="register-interest.html">Register Your Interest</a></li>
+                    <li><a class="navbar-right-items text-center" href="about.html">About</a></li>
+                    <li><a class="navbar-right-items text-center" href="site-map.html">Site Map</a></li>
+                    <!-- Button calls JavaScript function --> 
+                    <li><a class="navbar-right-theme-button navbar-right-items text-center" onclick="SwapTheme()"><i id="theme-button" class="fa fa-moon-o" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Responsive container for content -->
+    <div class="container-fluid">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="row">
+                <!-- Banner image -->
+                <div class="col-md-3">
+                    <img class="banner-image center-block" src="assets/banner-image.jpg">
+                </div>
+                <!-- Banner text -->
+                <div class="col-md-6">
+                    <p class="banner-text">Since 1999, Fasthosts has been designing new ways to give customers everything they need to manage and control their online space. Innovation drives everything we do, ensuring we offer the latest internet technology across our range
+                        of services including domain names, shared web hosting, business-class email, dedicated servers, cloud servers, secure online storage and online backup. We also maintain a highly successful reseller channel.</p>
+                    <p class="banner-text">Based in the UK and operating 24/7 from our dedicated UK data centres, we keep over a million domains running smoothly and ensure over 42 million emails are delivered safely each day. All our services can be self-managed through the
+                        award-winning Fasthosts Control Panel. By focusing on the needs of our customers and employing great people, we've created a profitable, fast moving and market-leading organisation.</p>
+                </div>
+                <!-- Banner image -->
+                <div class="col-md-3">
+                    <img class="banner-image center-block" src="assets/banner-image-1.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages that are offered by Fasthosts. -->
+        <div class="row packages-row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 packages">
+                            <h2 class="text-center">Cloud Servers</h2>
+                            <img class="package-image center-block" src="assets/packages-image-1.jpg">
+                            <p class="package-text text-center">Next generation Cloud Servers that scale on demand</p>
+                            <!-- Button toggles currentlyUnavailablePackagesModal -->
+                            <button type="button" data-toggle="modal" data-target="#currentlyUnavailablePackagesModal" class="btn btn-default package-button center-block">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 packages">
+                            <h2 class="text-center">Web Hosting</h2>
+                            <img class="package-image center-block" src="assets/packages-image-2.jpg">
+                            <p class="package-text text-center">Reliable web hosting that can help your business grow</p>
+                            <!-- Div here so that button can be centered using text-center in bootstrap.
+                            center-block in combination with an anchor tag create a wide area around the button that can be clicked which isn't desired. -->
+                            <div class="text-center">
+                                <a href="domains.html"><button type="button" class="btn btn-default package-button">More Info</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 packages">
+                            <h2 class="text-center">Website Builder</h2>
+                            <img class="package-image center-block" src="assets/packages-image-3.png">
+                            <p class="package-text text-center">The easy way to build your personal or business website</p>
+                            <!-- Button toggles currentlyUnavailablePackagesModal -->
+                            <button type="button" data-toggle="modal" data-target="#currentlyUnavailablePackagesModal" class="btn btn-default package-button center-block">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for packages that are currently unavailable (Website Builder and Cloud Servers) -->
+    <div id="currentlyUnavailablePackagesModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal popup content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Package Unavailable</h4>
+                </div>
+                <div class="modal-body">
+                    <p>At this time, the package you have selected is currently unavailable. Please check back later.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bt-default domain-modal-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row footer-row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-xs-6 col-xs-offset-3 text-center">
+                        <p>© 1999-2017 Fasthosts Internet Limited. All rights reserved.<br>
+                        Fasthosts is the trading name of Fasthosts Internet Limited.<br>
+                        Company registration No. 3656438. Registered in England and Wales.<br>
+                        VAT No. 720821857. Registered office: Discovery House, 154 Southgate Street, Gloucester</p>
+                        <!-- Footer Links -->
+                        <ul class="footer-links-list">
+                            <li><a href="index.html">Home | </a></li>
+                            <li><a href="domains.html">Top Level Domains | </a></li>
+                            <li><a href="domain-info.html">What is a Top Level Domain? | </a></li>
+                            <li><a href="register-interest.html">Register Your Interest | </a></li>
+                            <li><a href="about.html">About | </a></li>
+                            <li><a href="site-map.html">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

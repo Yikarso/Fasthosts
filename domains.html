@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Most text sourced from https://www.fasthosts.co.uk -->
+<head>
+    <!-- Setting character set -->
+    <meta charset="utf-8">
+    <!-- Setting page layout according to device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FastHosts - Domains</title>
+    <!-- Linking CSS -->
+    <link id="dark-style" href="styleDark.css" rel="stylesheet" type="text/css">
+    <link id="light-style" href="style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Linking JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body onload="InitialiseTheme()">
+    <!-- Navbar -->
+    <nav id="navbar-container" class="navbar">
+        <div class="container">
+            <!-- Left navbar items -->
+            <div class="navbar-left">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Navbar image -->
+                    <a href="index.html">
+                        <img class="navbar-brand-image" src="assets/navbar-logo.gif">
+                    </a>
+                    <!-- Dropdown button for when width of webpage gets too low to display all the navbar items -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-right-container">
+                        <!-- Dropdown button icon -->
+                        <img class="hamburger-menu" src="assets/hamburger.png">
+                    </button>
+                </ul>
+            </div>
+            <!-- Navbar items that can collapse when width of webpage gets too low to display all the navbar items -->
+            <div class="collapse navbar-collapse" id="navbar-right-container">
+                <!-- Right navbar items -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="navbar-right-items text-center" href="index.html">Home</a></li>
+                    <li><a id="navbar-current-page" class="navbar-right-items text-center" href="domains.html">Top Level Domains</a></li>
+                    <li><a class="navbar-right-items text-center" href="register-interest.html">Register Your Interest</a></li>
+                    <li><a class="navbar-right-items text-center" href="about.html">About</a></li>
+                    <li><a class="navbar-right-items text-center" href="site-map.html">Site Map</a></li>
+                    <li><a class="navbar-right-theme-button navbar-right-items text-center" onclick="SwapTheme()"><i id="theme-button" class="fa fa-moon-o" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Responsive container for content -->
+    <div class="container-fluid">
+        <div class="row domains-row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h1>Domains Available</h1>
+                <a class="domains-unknown" href="domain-info.html">What's a Top Level Domain?</a>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 domains-options-row text-center">
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.co.uk</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£1.00 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.com</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£1.00 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.uk</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£1.00 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.website</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£9.99 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.net</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£11.99 per year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-1 domains-options-row text-center">
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.org.uk</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£0.99 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.club</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£14.99 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.eu</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£9.49 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.blog</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£14.99 per year</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-md-10 col-md-offset-1 domains">
+                        <p class="domain-title">.london</p>
+                        <p>Delivered within 7 days</p>
+                        <p>£19.99 per year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-5 domain-button-col">
+                <a href="register-interest.html"><button class="btn domain-button center-block">Purchase a Domain</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container-fluid">
+            <div class="row footer-row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-xs-6 col-xs-offset-3 text-center">
+                        <p>© 1999-2017 Fasthosts Internet Limited. All rights reserved.<br>
+                        Fasthosts is the trading name of Fasthosts Internet Limited.<br>
+                        Company registration No. 3656438. Registered in England and Wales.<br>
+                        VAT No. 720821857. Registered office: Discovery House, 154 Southgate Street, Gloucester</p>
+                        <!-- Footer Links -->
+                        <ul class="footer-links-list">
+                            <li><a href="index.html">Home | </a></li>
+                            <li><a href="domains.html">Top Level Domains | </a></li>
+                            <li><a href="domain-info.html">What is a Top Level Domain? | </a></li>
+                            <li><a href="register-interest.html">Register Your Interest | </a></li>
+                            <li><a href="about.html">About | </a></li>
+                            <li><a href="site-map.html">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
